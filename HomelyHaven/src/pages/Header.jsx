@@ -30,9 +30,9 @@ const Header = () => {
         <div>Resources</div>
       </div>
       <div className="flex items-center gap-2 border border-grey-300 rounded-full px-4 py-2 shadow shadow-grey-300">
-        <button>Login</button>
+        <button >Login</button>
         <div className="border-l border-grey-300"></div>
-        <button>Sign Up</button>
+        <button >Sign Up</button>
       </div>
     </header>
   );
