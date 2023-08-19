@@ -1,0 +1,126 @@
+{
+  "estate": [
+    {
+      "id": 1,
+      "name": "Thoughtstorm",
+      "location": { "address": "04319 Derek Avenue", "city": "Mumbai" },
+      "price": 36120,
+      "image": "https://cdn.pixabay.com/photo/2016/06/24/10/47/house-1477041_1280.jpg",
+      "property-type": "House",
+      "move-in-date": { "year": 2023, "month": 4 },
+      "data": { "bed": 4, "bathroom": 2, "dimension": "5*5" },
+      "popular": true
+    },
+    {
+      "id": 2,
+      "name": "Zoombox",
+      "location": { "address": "37 Scott Way", "city": "Mumbai" },
+      "price": 33007,
+      "image": "https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_640.jpg",
+      "property-type": "House",
+      "move-in-date": { "year": 2023, "month": 6 },
+      "data": { "bed": 1, "bathroom": 2, "dimension": "5*5" },
+      "popular": true
+    },
+    {
+      "id": 3,
+      "name": "Fivechat",
+      "location": { "address": "0 Kingsford Point", "city": "Banglore" },
+      "price": 43208,
+      "image": "https://cdn.pixabay.com/photo/2017/03/30/04/14/house-2187170_640.jpg",
+      "property-type": "Apartment",
+      "move-in-date": { "year": 2023, "month": 5 },
+      "data": { "bed": 4, "bathroom": 0, "dimension": "9*9" },
+      "popular": true
+    },
+    {
+      "id": 4,
+      "name": "Oyope",
+      "location": { "address": "3848 Mcguire Drive", "city": "Mumbai" },
+      "price": 45679,
+      "image": "https://cdn.pixabay.com/photo/2014/07/10/17/18/large-home-389271_640.jpg",
+      "property-type": "Apartment",
+      "move-in-date": { "year": 2023, "month": 6 },
+      "data": { "bed": 5, "bathroom": 3, "dimension": "8*8" },
+      "popular": true
+    },
+    {
+      "id": 5,
+      "name": "Vitz",
+      "location": { "address": "5094 Fair Oaks Drive", "city": "Delhi" },
+      "price": 12767,
+      "image": "https://images.pexels.com/photos/3221215/pexels-photo-3221215.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "property-type": "Apartment",
+      "move-in-date": { "year": 2023, "month": 7 },
+      "data": { "bed": 1, "bathroom": 1, "dimension": "6*6" },
+      "popular": true
+    },
+    {
+      "id": 6,
+      "name": "Yakitri",
+      "location": { "address": "7 Debs Junction", "city": "Kolkata" },
+      "price": 23614,
+      "image": "https://images.pexels.com/photos/221540/pexels-photo-221540.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "property-type": "Apartment",
+      "move-in-date": { "year": 2023, "month": 8 },
+      "data": { "bed": 5, "bathroom": 0, "dimension": "6*6" },
+      "popular": true
+    },
+    {
+      "id": 7,
+      "name": "Skipfire",
+      "location": { "address": "98 Lerdahl Crossing", "city": "Kolkata" },
+      "price": 33123,
+      "image": "https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "property-type": "Apartment",
+      "move-in-date": { "year": 2023, "month": 3 },
+      "data": { "bed": 4, "bathroom": 0, "dimension": "7*7" },
+      "popular": true
+    },
+    {
+      "id": 8,
+      "name": "Skaboo",
+      "location": { "address": "01062 Crescent Oaks Trail", "city": "Delhi" },
+      "price": 15232,
+      "image": "https://images.pexels.com/photos/2119714/pexels-photo-2119714.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "property-type": "House",
+      "move-in-date": { "year": 2023, "month": 8 },
+      "data": { "bed": 5, "bathroom": 1, "dimension": "8*8" },
+      "popular": false
+    },
+    {
+      "id": 9,
+      "name": "Fivechat",
+      "location": { "address": "562 Eggendart Alley", "city": "Delhi" },
+      "price": 49771,
+      "image": "https://images.pexels.com/photos/209296/pexels-photo-209296.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "property-type": "House",
+      "move-in-date": { "year": 2023, "month": 4 },
+      "data": { "bed": 4, "bathroom": 3, "dimension": "9*9" },
+      "popular": true
+    },
+    {
+      "id": 10,
+      "name": "Yodoo",
+      "location": { "address": "069 Gerald Pass", "city": "Kolkata" },
+      "price": 24073,
+      "image": "https://images.pexels.com/photos/210617/pexels-photo-210617.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "property-type": "House",
+      "move-in-date": { "year": 2023, "month": 4 },
+      "data": { "bed": 1, "bathroom": 0, "dimension": "5*5" },
+      "popular": false
+    },
+    {
+      "id": 11,
+      "name": "Einti",
+      "location": { "address": "25828 Hintze Crossing", "city": "Delhi" },
+      "price": 33401,
+      "image": "https://images.pexels.com/photos/449023/pexels-photo-449023.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "property-type": "House",
+      "move-in-date": { "year": 2023, "month": 8 },
+      "data": { "bed": 3, "bathroom": 3, "dimension": "7*7" },
+      "popular": false
+    }
+    
+  ]
+}
