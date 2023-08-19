@@ -24,7 +24,7 @@ const IndexPage = () => {
       <h1 className="text-black font-bold text-4xl p-6">
         Search properties to rent
       </h1>
-      <div className="bg-white px-3  flex-row justify-between items-center border border-grey-300 rounded-full px-4 py-2 shadow shadow-grey-300">
+      <div className="bg-white px-3 py-2 sm:px-4 sm:py-2 mb-4 sm:flex sm:flex-row sm:justify-between sm:items-center ">
         <Filters
           onCityChange={handleCityChange}
           onPriceChange={handlePriceChange}

@@ -5,9 +5,9 @@ import DatePicker from "./DatePicker";
 
 const Filters = ({ onCityChange, onPriceChange, onPropertyTypeChange }) => {
   return (
-    <div className="flex flex-row justify-evenly items-start">
+    <div className="flex flex-wrap justify-start items-center">
       <LocationMenu onCityChange={onCityChange} />
-      <DatePicker/>
+      <DatePicker />
       <PriceMenu onPriceChange={onPriceChange} />
       <PropertyMenu onPropertyTypeChange={onPropertyTypeChange} />
     </div>
