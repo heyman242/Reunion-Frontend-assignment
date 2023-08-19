@@ -1,4 +1,5 @@
-import { useState } from "react";
+import React, { useState } from "react";
+
 import data from "../data/data.json";
 import { EstateCard } from "../components";
 
@@ -36,10 +37,17 @@ const EstateContainer = ({
   });
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-      {filteredEstateData.map((es) => {
-        return <EstateCard estate={es} key={es.id} />;
-      })}
+    <div className="sm:grid sm:grid-cols-3 sm:gap-4">
+      {filteredEstateData.length === 0 ? (
+        <div className="text-center mt-4">
+          <p>No estates found.</p>
+          <a href="/">Home</a>
+        </div>
+      ) : (
+        filteredEstateData.map((es) => {
+          return <EstateCard estate={es} key={es.id} />;
+        })
+      )}
     </div>
   );
 };

@@ -7,17 +7,19 @@ const EstateCard = ({ estate }) => {
       style={{
         background: "white",
         display: "flex",
-        flexDirection: "column", 
+        flexDirection: "column",
         border: "1px solid #000",
         borderRadius: "8px",
+        width: "430px",
         position: "relative",
+        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)", // Add a subtle shadow
       }}
     >
       <img
         src={estate.image}
         alt=""
         style={{
-          width: "100%", 
+          width: "100%",
           borderTopLeftRadius: "8px",
           borderTopRightRadius: "8px",
         }}
@@ -29,14 +31,14 @@ const EstateCard = ({ estate }) => {
           style={{
             position: "absolute",
             backgroundColor: "yellow",
-            top: "0px", 
-            right: "0px", 
+            top: "0px",
+            right: "0px",
             borderRadius: "8px",
             color: "var(--color-light)",
             display: "flex",
             alignItems: "center",
-            padding: "0.2rem 0.5rem", 
-            fontSize: "0.75rem", 
+            padding: "0.2rem 0.5rem",
+            fontSize: "0.75rem",
           }}
         >
           <HiSparkles className="h-3 mr-1" />

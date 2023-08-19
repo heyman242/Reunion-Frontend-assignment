@@ -10,9 +10,9 @@ const LocationMenu = ({ onCityChange }) => {
   };
 
   return (
-    <div>
+    <div className="flex flex-col sm:flex-row items-start">
       <div className="text-lg font-bold p-2">Location</div>
-      <div className="w-full sm:w-48 h-fit p-3 flex flex-row justify-between items-center hover:cursor-pointer">
+      <div className="w-full sm:w-48 h-fit p-1 flex flex-row justify-between items-center hover:cursor-pointer">
         <select
           name="location"
           id="location"
