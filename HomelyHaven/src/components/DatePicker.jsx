@@ -1,15 +1,11 @@
 
 const DatePicker = () => {
   return (
-    <div className="flex flex-col justify-center p-1 bg-white m-3 rounded-sm">
-      <span className=" relative top-[13px] left-[17px] text-black-500">
-        When
-      </span>
-      <div className="text-lg font-bold w-48 h-fit p-3 flex flex-row justify-between items-center hover:cursor-pointer">
+    <div>
+      <div className="text-lg font-bold p-2">When</div>
+      <div className="w-44 h-fit p-3 flex flex-row justify-between items-center hover:cursor-pointer">
         <select name="date" id="date">
-          <option  >
-            Select Move-in Date
-          </option>
+          <option>Select Move-in Date</option>
           <option value="8-2023">August,2023</option>
           <option value="9-2023">September,2023</option>
           <option value="10-2023">Oct,2023</option>

@@ -1,19 +1,26 @@
+import { useState } from "react";
 
+const PropertyMenu = ({ onPropertyTypeChange }) => {
+  const [selectedPropertyType, setSelectedPropertyType] = useState("");
 
-const PropertyMenu = () => {
+  const handlePropertyTypeChange = (event) => {
+    const propertyType = event.target.value;
+    setSelectedPropertyType(propertyType);
+    onPropertyTypeChange(propertyType);
+  };
+
   return (
-    <div className="flex flex-col justify-center p-1 bg-white m-3 rounded-sm">
-      <span className="relative top-[13px] left-[17px] text-black-500">
-        Property Type
-      </span>
-      <div
-        className="text-lg font-bold w-40 h-fit p-3 flex flex-row justify-between items-center
-        hover:cursor-pointer"
-      >
-        <select name="propertyType" id="propertyType">
+    <div>
+      <div className="text-lg font-bold p-2">Property Type</div>
+      <div className="w-40 h-fit p-3 flex flex-row justify-between items-center hover:cursor-pointer">
+        <select
+          name="propertyType"
+          id="propertyType"
+          onChange={handlePropertyTypeChange}
+        >
           <option>Select Property Type</option>
-          <option value="House">House</option>
           <option value="Apartment">Apartment</option>
+          <option value="House">House</option>
         </select>
       </div>
     </div>

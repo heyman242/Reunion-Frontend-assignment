@@ -7,11 +7,11 @@ const EstateCard = ({ estate }) => {
       <li
         style={{
           background: "white",
-          padding: "0 1rem",
           display: "flex",
-          flexDirection: "row",
           justifyContent: "space-between",
           alignItems: "center",
+          border: "1px solid #000",
+          borderRadius: "6px", 
         }}
       >
         <div style={{ width: "inherit", position: "relative" }}>
@@ -28,37 +28,21 @@ const EstateCard = ({ estate }) => {
           />
 
           {estate.popular ? (
-            <>
-              <div
-                className="pill"
-                style={{
-                  position: "absolute",
-                  backgroundColor: "var(--color-primary)",
-                  padding: ".5rem 1rem",
-                  top: "60%",
-                  left: "-14px",
-                  borderRadius: "8px 8px 8px 4px",
-                  color: "var(--color-light)",
-                }}
-              >
-                <Sparkle />
-                <span>Popular</span>
-              </div>
-              <div
-                className="triangle"
-                style={{
-                  width: 0,
-                  height: 0,
-                  border: "11px solid transparent",
-                  borderRight: "11px solid var(--color-primary)",
-                  transform: "rotate(137deg)",
-                  position: "absolute",
-                  top: "75.5%",
-                  left: "-7.6px",
-                  zIndex: 1,
-                }}
-              ></div>
-            </>
+            <div
+              className="pill"
+              style={{
+                position: "absolute",
+                backgroundColor: "var(--color-primary)",
+                padding: ".5rem 1rem",
+                top: "60%",
+                left: "-14px",
+                borderRadius: "8px 8px 8px 4px",
+                color: "var(--color-light)",
+              }}
+            >
+              <HiSparkles className="h-3" />
+              <p className="text-xs text-center text-black">POPULAR</p>
+            </div>
           ) : (
             <></>
           )}
@@ -99,7 +83,7 @@ const EstateCard = ({ estate }) => {
               justifyContent: "space-between",
               alignItems: "center",
               fontSize: "0.8rem",
-              marginTop: "1.5rem",
+              
             }}
           >
             <div

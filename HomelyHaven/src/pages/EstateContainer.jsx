@@ -1,14 +1,47 @@
 import { useState } from "react";
 import data from "../data/data.json";
-import {EstateCard } from '../components'
+import { EstateCard } from "../components";
 
-const EstateContainer = () => {
+const EstateContainer = ({
+  selectedCity,
+  selectedPrice,
+  selectedPropertyType,
+}) => {
   const [estateData, setData] = useState(data.estate);
-  return <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:w-[1000px]">
-      {estateData.map((es) => {
+
+  const filteredEstateData = estateData.filter((estate) => {
+    if (selectedCity && estate.location.city !== selectedCity) {
+      return false;
+    }
+
+    if (selectedPrice) {
+      const [minPrice, maxPrice] = selectedPrice.split("-");
+      const estatePrice = parseInt(estate.price);
+      if (
+        estatePrice < parseInt(minPrice) ||
+        estatePrice > parseInt(maxPrice)
+      ) {
+        return false;
+      }
+    }
+
+    if (
+      selectedPropertyType &&
+      estate["property-type"] !== selectedPropertyType
+    ) {
+      return false;
+    }
+
+    return true;
+  });
+
+  return (
+    <div className="sm:grid sm:grid-cols-3 sm:gap-4">
+      {filteredEstateData.map((es) => {
         return <EstateCard estate={es} key={es.id} />;
       })}
-    </div>;
+    </div>
+  );
 };
 
 export default EstateContainer;
